@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'DM Sans';
+}
+
+h1, button {
+    font-family: 'Poppins';
 }
 
 .center {
@@ -67,10 +71,6 @@ section.about {
     margin: 25px 0;
 }
 
-.about-text {
-    margin-top: 100px;
-}
-
 .about-text h1 {
     font-size: 3.5rem;
 }
@@ -90,4 +90,6 @@ section.about {
     width: 180px;
     padding: 10px;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
 }
