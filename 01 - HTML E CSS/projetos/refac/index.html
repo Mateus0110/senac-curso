@@ -4,16 +4,20 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Café Starbucks</title>
+        <title>Home - Starbucks Coffee Company</title>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <![endif]-->
         <link rel="stylesheet" href="src/css/app.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
             rel="stylesheet"
         />
+        <link rel="icon" href="src/img/logo.png" />
     </head>
     <body>
         <div id="app" class="d-flex">
-            <header id="main" class="d-flex container">
+            <header id="main" class="d-flex container reveal-app-one">
                 <div class="brand">
                     <a href=""><img src="src/img/logo.png" alt="" /></a>
                 </div>
@@ -47,7 +51,7 @@
                 </nav>
             </header>
 
-            <main class="d-flex">
+            <main class="d-flex reveal-app-two">
                 <section id="home" class="">
                     <div class="d-flex container">
                         <div class="text-area d-flex">
@@ -261,5 +265,7 @@
             src="https://kit.fontawesome.com/a9bb822b0f.js"
             crossorigin="anonymous"
         ></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="src/js/app.js"></script>
     </body>
 </html>
