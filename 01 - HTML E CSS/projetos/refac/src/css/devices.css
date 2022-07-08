@@ -1,0 +1,86 @@
+@media (max-width: 767.98px) {
+    html, body {
+        overflow-x: visible;
+    }
+    
+    .image-area {
+        display: none;
+    }
+    
+    /* header */    
+    header .brand img {
+        width: 80px;
+    }
+
+    header nav {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    header.show nav {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+
+        width: 100vw;
+        height: 100vh;
+        background-color: whitesmoke;
+
+        position: absolute;
+        top: calc(-21% + 1.5px);
+        left: calc(-6% + 1.5px);
+        border: 1px solid red;
+    }
+
+    header.show nav ul {
+        flex-direction: column;
+    }
+
+    header .toggle {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .toggle .fa-solid {
+        font-size: 2.5rem;
+    }
+    
+    header .toggle .fa-bars {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    header .toggle .fa-xmark {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    header.show .toggle .fa-bars {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    header.show .toggle .fa-xmark {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* class */
+    .container {
+        width: 90%;
+    }
+}
+
+/* @media (min-width: 576px) and (max-width: 767.98px) {} */
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}

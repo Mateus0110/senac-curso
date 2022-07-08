@@ -6,7 +6,7 @@
 }
 
 html, body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -21,6 +21,11 @@ p {
     text-align: justify;
 }
 
+i {
+    color: #017143;
+    cursor: pointer;
+}
+
 #app {
     padding: 1rem 0;
     flex-direction: column;
@@ -28,17 +33,17 @@ p {
 }
 
 /* header */
-header#main {
+header {
     justify-content: space-between;
 }
 
-header#main nav ul {
+header nav ul {
     gap: 1.5rem;
     align-items: center;
     height: 60%;
 }
 
-header#main nav ul a {
+header nav ul a {
     color: #444;
     font-size: 1rem;
     text-transform: uppercase;
@@ -47,11 +52,11 @@ header#main nav ul a {
     position: relative;
 }
 
-header#main nav ul a:hover, header#main nav ul a.active {
+header nav ul a:hover, header#main nav ul a.active {
     color: #017143;
 }
 
-header#main nav ul a::after {
+header nav ul a::after {
     content: '';
     width: 0;
     height: 2px;
@@ -62,9 +67,17 @@ header#main nav ul a::after {
     transition: width 0.2s;
 }
 
-header#main nav ul a:hover::after, #header main ul a.active::after {
+header nav ul a:hover::after, #header main ul a.active::after {
     width: 100%;
 }
+
+header .toggle {
+    display: none;
+    visibility: none;
+    opacity: 0;
+    align-self: center;
+}
+
 
 /* main */
 main {
@@ -98,7 +111,6 @@ section#home .text-area .social-media ul {
 
 section#home .text-area .social-media i {
     font-size: 1.7rem;
-    color: #017143;
     padding: 11px;
     border: 1px solid #017143;
     border-radius: 10px;
