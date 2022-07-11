@@ -1,7 +1,7 @@
 @media (max-width: 767.98px) {
-    html, body {
+    /* html, body {
         overflow-x: visible;
-    }
+    } */
     
     .image-area {
         display: none;
@@ -12,65 +12,29 @@
         width: 80px;
     }
 
-    header nav {
-        display: none;
-        visibility: hidden;
-        opacity: 0;
+    header nav #btn-mobile {
+        display: block;
     }
 
-    header.show nav {
-        display: block;
-        visibility: visible;
-        opacity: 1;
-
-        width: 100vw;
-        height: 100vh;
-        background-color: whitesmoke;
-
+    header nav ul.d-flex {
+        display: none;
         position: absolute;
-        top: calc(-21% + 1.5px);
-        left: calc(-6% + 1.5px);
-        border: 1px solid red;
+        width: 100%;
+        top: 90px;
+        right: 0px;
+        background-color: whitesmoke;
+        height: calc(100vh - 90px);
+        z-index: 1000;
     }
 
-    header.show nav ul {
-        flex-direction: column;
-    }
-
-    header .toggle {
+    header nav.show ul.d-flex {
         display: block;
-        visibility: visible;
-        opacity: 1;
     }
-
-    header .toggle .fa-solid {
-        font-size: 2.5rem;
+    header nav ul a {
+        padding: 1rem 0;
+        margin: 0 1rem;
     }
     
-    header .toggle .fa-bars {
-        display: block;
-        visibility: visible;
-        opacity: 1;
-    }
-    
-    header .toggle .fa-xmark {
-        display: none;
-        visibility: hidden;
-        opacity: 0;
-    }
-    
-    header.show .toggle .fa-bars {
-        display: none;
-        visibility: hidden;
-        opacity: 0;
-    }
-    
-    header.show .toggle .fa-xmark {
-        display: block;
-        visibility: visible;
-        opacity: 1;
-    }
-
     /* class */
     .container {
         width: 90%;

@@ -26,21 +26,21 @@ i {
     cursor: pointer;
 }
 
-#app {
-    padding: 1rem 0;
-    flex-direction: column;
-    gap: 2rem;
-}
-
 /* header */
 header {
+    display: flex;
     justify-content: space-between;
+    padding: .7rem 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
 }
 
 header nav ul {
+    display: flex;
     gap: 1.5rem;
-    align-items: center;
-    height: 60%;
 }
 
 header nav ul a {
@@ -71,26 +71,23 @@ header nav ul a:hover::after, #header main ul a.active::after {
     width: 100%;
 }
 
-header .toggle {
-    display: none;
-    visibility: none;
-    opacity: 0;
-    align-self: center;
+header nav #btn-mobile {
+    display: none
 }
-
 
 /* main */
 main {
-    flex-direction: column;
-    gap: 6rem;
+    margin-top: 2rem;
 }
 
 /* Home */
-section#home div.d-flex.container {
+section#home div.container {
+    display: flex;
     gap: 3rem;
 }
 
 section#home .text-area {
+    display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
@@ -104,9 +101,10 @@ section#home .text-area .social-media {
 }
 
 section#home .text-area .social-media ul {
-    height: 100%;
+    display: flex;
     align-items: flex-end;
     gap: 2rem;
+    height: 100%;
 }
 
 section#home .text-area .social-media i {
@@ -142,12 +140,6 @@ section#home .image-area .bg-area {
     margin: 0 auto;
 }
 
-.divider {
-    width: 100%;
-    height: 1px;
-    background-color: #444;
-}
-
 .button {
     width: 30%;
     text-align: center;
@@ -160,10 +152,6 @@ section#home .image-area .bg-area {
 
 .button:hover {
     background-color: #065a37;
-}
-
-.d-flex {
-    display: flex;
 }
 
 .high-color {

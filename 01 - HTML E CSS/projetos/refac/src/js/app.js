@@ -1,11 +1,13 @@
-const header = document.querySelector('header')
-const toggle = document.querySelectorAll('.toggle .fa-solid')
+const mobileBtn = document.getElementById('btn-mobile')
 
-for (const icon of toggle) {
-    icon.addEventListener('click', () => {
-        header.classList.toggle('show')
-    })
+function toggleMenu() {
+    const navbar = document.getElementById('nav')
+
+    navbar.classList.toggle('show')
 }
+
+mobileBtn.addEventListener('click', toggleMenu)
+
 
 const app = {
     origin: 'left',
